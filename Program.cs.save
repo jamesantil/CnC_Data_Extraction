@@ -1,0 +1,116 @@
+using System;
+using System.IO;
+using System.Text.Json;
+using System.Threading;
+using Sinumerik.Advanced;
+using Avalonia;
+using System.Collections.Generic;
+
+namespace CnC_Data;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        string? ip = null;
+        string? f = null; 
+        int freq=0;
+        for (int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "--ip" && i + 1 < args.Length)
+                ip = args[i + 1];
+            if (args[i] =="--f" && i + 1<args.Length)
+                f = args[i+1];
+            if (args[i] == "--freq" && i + 1 < args.Length)
+            int.TryParse(args[i + 1], out freq);
+        }
+
+        if (!string.IsNullOrEmpty(ip))
+        {
+            RunHeadless(ip,f,freq);
+            return;
+        }
+        
+
+        BuildAvaloniaApp()
+            .StartWithClassicDesktopLifetime(args);
+    }
+
+    static void RunHeadless(string ip, string f,int freq)
+{
+    Console.WriteLine($"Connecting to {ip}");
+
+    var doc = JsonDocument.Parse(File.ReadAllText("config.json"));
+    var parameters = doc.RootElement.GetProperty("parameters");
+
+    string jsonFile;
+
+    if (string.IsNullOrEmpty(f))
+    {
+        string[] words = ip.Split('.');
+        jsonFile = "";
+
+        foreach (string word in words)
+        {
+            jsonFile += word + "_";
+        }
+
+        jsonFile += "machine_log.json";
+    }
+    else
+    {
+        jsonFile = f;
+    }
+
+    using var client = new SinumerikClient($"s840d.sl://{ip}");
+    client.Connect();
+
+    while (true)
+    {
+        var data = new Dictionary<string, object?>();
+
+        foreach (var param in parameters.EnumerateObject())
+        {
+            string name = param.Name;
+            string address = param.Value[0].GetString() ?? "";
+
+            try
+            {
+                var value = client.ReadValue(address);
+                data[name] = value;
+            }
+            catch
+            {
+                data[name] = null;
+            }
+        }
+
+        var output = new
+        {
+            timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+            data = new
+            {
+                ip_address = ip,
+                data = new
+                {
+                    dmg_data = new[]
+                    {
+                        data
+                    }
+                }
+            }
+        };
+
+        string json = JsonSerializer.Serialize(output,
+            new JsonSerializerOptions { WriteIndented = true });
+        
+        File.AppendAllText(jsonFile, json + "\n");
+         
+    Thread.Sleep(freq == 0 ? 3000 : freq);
+    }
+}
+    public static AppBuilder BuildAvaloniaApp()
+        => AppBuilder.Configure<App>()
+            .UsePlatformDetect()
+            .LogToTrace();
+}

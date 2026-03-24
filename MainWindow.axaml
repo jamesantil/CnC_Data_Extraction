@@ -1,0 +1,93 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="CnC_Data.MainWindow"
+        Width="600"
+        Height="400"
+        Title="Parser Configuration">
+
+    <Grid Margin="20"
+          RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,*"
+          ColumnDefinitions="150,*">
+
+        <!-- Input IP -->
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Input IP Address:"
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="0"
+                 Grid.Column="1"
+                 Name="InputIPBox"
+                 Watermark="Enter input IP"/>
+
+        <!-- Output IP -->
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Margin="0,10,0,0"
+                   Text="Output IP Address:"
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="1"
+                 Grid.Column="1"
+                 Margin="0,10,0,0"
+                 Name="OutputIPBox"
+                 Watermark="Enter output IP"/>
+
+        <!-- Frequency -->
+        <TextBlock Grid.Row="2"
+                   Grid.Column="0"
+                   Margin="0,10,0,0"
+                   Text="Frequency (ms):"
+                   VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2"
+                 Grid.Column="1"
+                 Margin="0,10,0,0"
+                 Name="FrequencyBox"
+                 Watermark="Milliseconds"/>
+        <!-- file location-->
+        <TextBlock Grid.Row="3"
+                   Grid.Column="0"
+                   Text="Enter File Location:"
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="3"
+                 Grid.Column="1"
+                 Name="CSVLocation"
+                 Watermark="Enter File Location"/>
+
+        <!-- Parameters Dropdown -->
+        <TextBlock Grid.Row="4"
+                   Grid.Column="0"
+                   Margin="0,10,0,0"
+                   Text="Parameters:"
+                   VerticalAlignment="Center"/>
+
+        <ComboBox Grid.Row="4"
+                  Grid.Column="1"
+                  Margin="0,10,0,0"
+                  Width="200"
+                  Name="ParameterCombo"/>
+
+        <!-- Submit Button -->
+        <Button Grid.Row="5"
+                Grid.Column="1"
+                Margin="0,20,0,0"
+                Width="120"
+                HorizontalAlignment="Right"
+                Content="Submit"
+                Click="SubmitClicked"/>
+
+        <!-- Output Area -->
+        <ScrollViewer Grid.Row="6"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                      Margin="0,20,0,0"
+                      Height="120">
+            <TextBlock Name="OutputText"
+                       TextWrapping="Wrap"/>
+        </ScrollViewer>
+
+    </Grid>
+
+</Window>
+

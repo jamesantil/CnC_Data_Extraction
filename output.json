@@ -1,0 +1,228 @@
+{
+  "timestamp": "2026-03-15 06:11:28",
+  "data": {
+    "ip_address": "10.173.14.194",
+    "data": {
+      "dmg_data": [
+        {
+          "start_up": 1023,
+          "total_number": 8125,
+          "current_cycle": 0,
+          "current_run_time": 0,
+          "total_cutting_time": 9473207.448062634,
+          "tool_name": "DIA 5 DRILL",
+          "tool_radius": 2.65,
+          "tool_length": 163.857,
+          "current_program_name": "_N_MPF0",
+          "current_program_content": "",
+          "spindle_speed": 0,
+          "spindle_feed": 0,
+          "spindle_override": 100,
+          "feed_override": 100,
+          "x_axis_coordinate": 399.968703566884,
+          "y_axis_coordinate": -160.42556527041415,
+          "z_axis_coordinate": 0.49734713023359584,
+          "c_axis_coordinate": 8.571042553445722E-05,
+          "a_axis_coordinate": 0.00010728900433015831,
+          "driveload_x": 0,
+          "driveload_y": 0,
+          "driveload_z": 0,
+          "driveload_c": 0,
+          "driveload_a": 0,
+          "program_status": 5,
+          "spindle_load": 0
+        }
+      ]
+    }
+  }
+}
+{
+  "timestamp": "2026-03-15 06:11:33",
+  "data": {
+    "ip_address": "10.173.14.194",
+    "data": {
+      "dmg_data": [
+        {
+          "start_up": 1023,
+          "total_number": 8125,
+          "current_cycle": 0,
+          "current_run_time": 0,
+          "total_cutting_time": 9473207.448062634,
+          "tool_name": "DIA 5 DRILL",
+          "tool_radius": 2.65,
+          "tool_length": 163.857,
+          "current_program_name": "_N_MPF0",
+          "current_program_content": "",
+          "spindle_speed": 0,
+          "spindle_feed": 0,
+          "spindle_override": 100,
+          "feed_override": 100,
+          "x_axis_coordinate": 399.96867353882106,
+          "y_axis_coordinate": -160.42557527075417,
+          "z_axis_coordinate": 0.49740713023359584,
+          "c_axis_coordinate": 8.570971444525807E-05,
+          "a_axis_coordinate": 0.00010728914738178261,
+          "driveload_x": 0,
+          "driveload_y": 0,
+          "driveload_z": 0,
+          "driveload_c": 0,
+          "driveload_a": 0,
+          "program_status": 5,
+          "spindle_load": 0
+        }
+      ]
+    }
+  }
+}
+{
+  "timestamp": "2026-03-15 06:11:38",
+  "data": {
+    "ip_address": "10.173.14.194",
+    "data": {
+      "dmg_data": [
+        {
+          "start_up": 1023,
+          "total_number": 8125,
+          "current_cycle": 0,
+          "current_run_time": 0,
+          "total_cutting_time": 9473207.448062634,
+          "tool_name": "DIA 5 DRILL",
+          "tool_radius": 2.65,
+          "tool_length": 163.857,
+          "current_program_name": "_N_MPF0",
+          "current_program_content": "",
+          "spindle_speed": 0,
+          "spindle_feed": 0,
+          "spindle_override": 100,
+          "feed_override": 100,
+          "x_axis_coordinate": 399.96855353272133,
+          "y_axis_coordinate": -160.4255352700741,
+          "z_axis_coordinate": 0.49740713023359584,
+          "c_axis_coordinate": 8.571042553445722E-05,
+          "a_axis_coordinate": 0.00010728914738273629,
+          "driveload_x": 0,
+          "driveload_y": 0,
+          "driveload_z": 0,
+          "driveload_c": 0,
+          "driveload_a": 0,
+          "program_status": 5,
+          "spindle_load": 0
+        }
+      ]
+    }
+  }
+}
+{
+  "timestamp": "2026-03-15 06:11:44",
+  "data": {
+    "ip_address": "10.173.14.194",
+    "data": {
+      "dmg_data": [
+        {
+          "start_up": 1024,
+          "total_number": 8125,
+          "current_cycle": 0,
+          "current_run_time": 0,
+          "total_cutting_time": 9473207.448062634,
+          "tool_name": "DIA 5 DRILL",
+          "tool_radius": 2.65,
+          "tool_length": 163.857,
+          "current_program_name": "_N_MPF0",
+          "current_program_content": "",
+          "spindle_speed": 0,
+          "spindle_feed": 0,
+          "spindle_override": 100,
+          "feed_override": 100,
+          "x_axis_coordinate": 399.968493535163,
+          "y_axis_coordinate": -160.4255252710942,
+          "z_axis_coordinate": 0.4974171302335958,
+          "c_axis_coordinate": 8.571042554393842E-05,
+          "a_axis_coordinate": 8.58314037375451E-05,
+          "driveload_x": 0,
+          "driveload_y": 0,
+          "driveload_z": 0,
+          "driveload_c": 0,
+          "driveload_a": 0,
+          "program_status": 5,
+          "spindle_load": 0
+        }
+      ]
+    }
+  }
+}
+{
+  "timestamp": "2026-03-15 06:11:49",
+  "data": {
+    "ip_address": "10.173.14.194",
+    "data": {
+      "dmg_data": [
+        {
+          "start_up": 1024,
+          "total_number": 8125,
+          "current_cycle": 0,
+          "current_run_time": 0,
+          "total_cutting_time": 9473207.448062634,
+          "tool_name": "DIA 5 DRILL",
+          "tool_radius": 2.65,
+          "tool_length": 163.857,
+          "current_program_name": "_N_MPF0",
+          "current_program_content": "",
+          "spindle_speed": 0,
+          "spindle_feed": 0,
+          "spindle_override": 100,
+          "feed_override": 100,
+          "x_axis_coordinate": 399.96858356322537,
+          "y_axis_coordinate": -160.4254952683741,
+          "z_axis_coordinate": 0.4973871302335958,
+          "c_axis_coordinate": 8.571042554393842E-05,
+          "a_axis_coordinate": 0.00011801791191577918,
+          "driveload_x": 0,
+          "driveload_y": 0,
+          "driveload_z": 0,
+          "driveload_c": 0,
+          "driveload_a": 0,
+          "program_status": 5,
+          "spindle_load": 0
+        }
+      ]
+    }
+  }
+}
+{
+  "timestamp": "2026-03-15 06:11:54",
+  "data": {
+    "ip_address": "10.173.14.194",
+    "data": {
+      "dmg_data": [
+        {
+          "start_up": 1024,
+          "total_number": 8125,
+          "current_cycle": 0,
+          "current_run_time": 0,
+          "total_cutting_time": 9473207.448062634,
+          "tool_name": "DIA 5 DRILL",
+          "tool_radius": 2.65,
+          "tool_length": 163.857,
+          "current_program_name": "_N_MPF0",
+          "current_program_content": "",
+          "spindle_speed": 0,
+          "spindle_feed": 0,
+          "spindle_override": 100,
+          "feed_override": 100,
+          "x_axis_coordinate": 399.9685535363803,
+          "y_axis_coordinate": -160.42554527143423,
+          "z_axis_coordinate": 0.49739713023359583,
+          "c_axis_coordinate": 8.571042553445722E-05,
+          "a_axis_coordinate": 8.58311891608239E-05,
+          "driveload_x": 0,
+          "driveload_y": 0,
+          "driveload_z": 0,
+          "driveload_c": 0,
+          "driveload_a": 0,
+          "program_status": 5,
+          "spindle_load": 0
+        }
+      ]
+    }
+  }
+}

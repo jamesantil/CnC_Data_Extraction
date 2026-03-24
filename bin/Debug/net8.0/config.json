@@ -1,0 +1,39 @@
+{
+    "network": {
+        "ip2": "10.110.140.97",
+        "xx.ip4": "192.168.0.102",
+        "ip": "192.168.215.1",
+        "url": "http://192.168.0.125:5000/post_data/dynamic_post/",
+        "sleep_time": 1000
+    },
+    
+    "parameters": {
+        "start_up": ["/Nck/ChannelDiagnose/poweronTime", null ],
+        "total_number": ["/Channel/State/totalParts",null],
+        "current_cycle": ["/Channel/ChannelDiagnose/cycleTime",0],
+        "current_run_time": ["/Channel/ChannelDiagnose/operatingTime",0],
+        "total_cutting_time": ["/Channel/ChannelDiagnose/cuttingTime",0],
+        "tool_name": ["/Channel/State/actToolIdent",null],
+        "tool_radius": ["/Channel/State/actToolRadius",null],
+        "tool_length": ["/Channel/State/actToolLength1",null],
+        "current_program_name": ["/Channel/ProgramInfo/progName", "Machine is off"],
+        "current_program_content": ["/Channel/ProgramInfo/block", "Machine is off"],
+        "spindle_speed": ["/Channel/Spindle/actSpeed",0],
+        "spindle_feed": ["/Channel/MachineAxis/actFeedRate",0],
+        "spindle_override": ["/Channel/Spindle/speedOvr",0],
+        "feed_override": ["/Nck/MachineAxis/feedRateOvr",0],
+        "x_axis_coordinate": ["/Nck/MachineAxis/aaIm[u1, 1]",0],
+        "y_axis_coordinate": ["/Nck/MachineAxis/aaIm[u1, 2]",0],
+        "z_axis_coordinate": ["/Nck/MachineAxis/aaIm[u1, 3]",0],
+        "c_axis_coordinate": ["/Nck/MachineAxis/aaIm[u1, 4]",0],
+        "a_axis_coordinate": ["/Nck/MachineAxis/aaIm[u1, 5]",0],
+        "driveload_x": ["/Nck/Spindle/driveLoad[u1, 1]",0],
+        "driveload_y": ["/Nck/Spindle/driveLoad[u1, 2]",0],
+        "driveload_z": ["/Nck/Spindle/driveLoad[u1, 3]",0],
+        "driveload_c": ["/Nck/Spindle/driveLoad[u1, 4]",0],
+        "driveload_a": ["/Nck/Spindle/driveLoad[u1, 5]",0],
+        "program_status": ["/Channel/State/progStatus[u1, 1]",0],
+        "spindle_load": ["/Nck/Spindle/driveLoad[u1, 6]",0]
+    }
+}
+
