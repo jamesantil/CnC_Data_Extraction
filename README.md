@@ -1,0 +1,5 @@
+Gemini said
+Here is a brief, paragraph-form overview that you can drop directly into your README's "About" or "Overview" section:
+
+
+CnC_Data is a C# .NET 8 application built with Avalonia UI and the Sinumerik SDK to extract real-time telemetry data from Siemens 840D sl CNC controllers.  The project features a dual-mode architecture: a cross-platform desktop GUI that allows users to interactively test configurations and log machine states directly to local CSV files , and a robust headless daemon designed for automated, continuous background execution. Utilizing a central config.json file, the application dynamically maps human-readable parameters to their specific internal NCK and Channel addresses to fetch precise data points like spindle speed, tool dimensions, and axis coordinates. When running in production via the headless daemon, the system actively monitors the machine's network reachability with ping tests to prevent crashes. It seamlessly packages the extracted telemetry into structured JSON payloads and pushes them via HTTP POST to a centralized IoT endpoint, making it highly scalable for monitoring multiple concurrent CNC units.
