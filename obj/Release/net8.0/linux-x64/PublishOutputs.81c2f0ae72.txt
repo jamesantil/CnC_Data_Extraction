@@ -1,3 +1,0 @@
-/home/utkarsh/CnC_Data/bin/Release/net8.0/linux-x64/publish/CnC_Data.pdb
-/home/utkarsh/CnC_Data/bin/Release/net8.0/linux-x64/publish/config.json
-/home/utkarsh/CnC_Data/bin/Release/net8.0/linux-x64/publish/CnC_Data
